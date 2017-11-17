@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Calculatrice" Height="455.092" Width="287.402">
     <Grid>
-        <TextBox x:Name="tbxNumber1" HorizontalAlignment="Left" Height="23" Margin="23,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="tbxNumber1" HorizontalAlignment="Left" Height="46" Margin="23,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="tbxNumber2" HorizontalAlignment="Left" Height="46" Margin="23,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" TextChanged="TextBox_TextChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Height="20" Margin="23,148,0,0" VerticalAlignment="Top" Width="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnAdd_Click"/>
-        <Label x:Name="lblResponse" Content="..." HorizontalAlignment="Left" Height="23" Margin="23,185,0,0" VerticalAlignment="Top" Width="230" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Button x:Name="btnSous" Content="-" HorizontalAlignment="Left" Height="20" Margin="53,148,0,0" VerticalAlignment="Top" Width="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnSous_Click"/>
-        <Button x:Name="btnMult" Content="*" HorizontalAlignment="Left" Height="20" Margin="82,148,0,0" VerticalAlignment="Top" Width="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnMult_Click"/>
-        <Button x:Name="btnDiv" Content="/" HorizontalAlignment="Left" Height="20" Margin="111,148,0,0" VerticalAlignment="Top" Width="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnDiv_Click"/>
+        <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Height="40" Margin="23,148,0,0" VerticalAlignment="Top" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnAdd_Click"/>
+        <Label x:Name="lblResponse" Content="..." HorizontalAlignment="Left" Height="23" Margin="23,200,0,0" VerticalAlignment="Top" Width="230" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnSous" Content="-" HorizontalAlignment="Left" Height="40" Margin="69,148,0,0" VerticalAlignment="Top" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnSous_Click"/>
+        <Button x:Name="btnMult" Content="*" HorizontalAlignment="Left" Height="40" Margin="115,148,0,0" VerticalAlignment="Top" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnMult_Click"/>
+        <Button x:Name="btnDiv" Content="/" HorizontalAlignment="Left" Height="40" Margin="161,148,0,0" VerticalAlignment="Top" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnDiv_Click"/>
 
     </Grid>
 </Window>
