@@ -41,12 +41,23 @@ namespace WPFCalculatrice
             double dblNb2;
             double dblRes;
 
-            dblNb1 = Convert.ToInt32(tbxNumber1.Text);
-            dblNb2 = Convert.ToInt32(tbxNumber2.Text);
-
-
-            dblRes = dblNb1 + dblNb2;
-            lblResponse.Content = dblRes.ToString();
+            if(double.TryParse(tbxNumber1.Text, out dblNb1))
+            {
+                if (double.TryParse(tbxNumber2.Text, out dblNb2))
+                {
+                    dblRes = dblNb1 + dblNb2;
+                    lblResponse.Content = dblRes.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Please control input..");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please control input..");
+            }
+            
 
 
             
@@ -58,12 +69,22 @@ namespace WPFCalculatrice
             double dblNb2;
             double dblRes;
 
-            dblNb1 = Convert.ToInt32(tbxNumber1.Text);
-            dblNb2 = Convert.ToInt32(tbxNumber2.Text);
-
-
-            dblRes = dblNb1 - dblNb2;
-            lblResponse.Content = dblRes.ToString();
+            if (double.TryParse(tbxNumber1.Text, out dblNb1))
+            {
+                if (double.TryParse(tbxNumber2.Text, out dblNb2))
+                {
+                    dblRes = dblNb1 - dblNb2;
+                    lblResponse.Content = dblRes.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Please control input..");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please control input..");
+            }
         }
 
         private void btnMult_Click(object sender, RoutedEventArgs e)
@@ -72,12 +93,22 @@ namespace WPFCalculatrice
             double dblNb2;
             double dblRes;
 
-            dblNb1 = Convert.ToInt32(tbxNumber1.Text);
-            dblNb2 = Convert.ToInt32(tbxNumber2.Text);
-
-
-            dblRes = dblNb1 * dblNb2;
-            lblResponse.Content = dblRes.ToString();
+            if (double.TryParse(tbxNumber1.Text, out dblNb1))
+            {
+                if (double.TryParse(tbxNumber2.Text, out dblNb2))
+                {
+                    dblRes = dblNb1 * dblNb2;
+                    lblResponse.Content = dblRes.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Please control input..");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please control input..");
+            }
         }
 
         private void btnDiv_Click(object sender, RoutedEventArgs e)
@@ -86,12 +117,22 @@ namespace WPFCalculatrice
             double dblNb2;
             double dblRes;
 
-            dblNb1 = Convert.ToInt32(tbxNumber1.Text);
-            dblNb2 = Convert.ToInt32(tbxNumber2.Text);
-
-
-            dblRes = dblNb1 / dblNb2;
-            lblResponse.Content = dblRes.ToString();
+            if (double.TryParse(tbxNumber1.Text, out dblNb1))
+            {
+                if (double.TryParse(tbxNumber2.Text, out dblNb2))
+                {
+                    dblRes = dblNb1 / dblNb2;
+                    lblResponse.Content = dblRes.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Please control input..");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please control input..");
+            }
         }
     }
 }
